@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直男星座指南</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="scroll-container">
+<!--navbar-->
+    <div class="navbar">
+        <div class="nav logo">LOGO</div>
+        <div class="nav-divider"></div>
+        <div class="nav date">日期與象位</div>
+        <div class="nav-divider"></div>
+        <div class="nav stereotype">各星座標籤</div>
+        <div class="nav-divider"></div>
+        <div class="nav one-word">跟她說一句話</div>
+        <div class="nav-divider"></div>
+        <div class="nav feedback">意見回饋</div>
+        <div class="site-counter"><div id="visitor">0</div><div class="small-text">次造訪</div></div>
+    </div>
+    <div class="nav--mobile">
+        <div class="nav--mobile__container">
+            <div class="nav--mobile__block">
+                <div class="nav--mobile__logo">LOGO</div>
+                <div class="nav--mobile__divider"></div>
+            </div>
+            <div><img class="nav--mobile__menu" src="image/menu.png" alt=""></div>
+        </div>
+    </div>
+
+<!--hero-image-->
+    <div class="section hero-image spin-container">
+        <div class="spin-outline"></div>
+        <div class="spin-title-container"> <div class="spin-title">不信星座</div><div class="spin-title">，</div><div class="spin-title">照樣聊天</div></div>
+        <div class="spin-object" style="--order: 1" ></div>
+        <div class="spin-object" style="--order: 2" ></div>
+        <div class="spin-object" style="--order: 3" ></div>
+        <div class="spin-object" style="--order: 4" ></div>
+        <div class="spin-object" style="--order: 5" ></div>
+        <div class="spin-object" style="--order: 6" ></div>
+        <div class="spin-object" style="--order: 7" ></div>
+        <div class="spin-object" style="--order: 8" ></div>
+        <div class="spin-object" style="--order: 9" ></div>
+        <div class="spin-object" style="--order: 10" ></div>
+        <div class="spin-object" style="--order: 11" ></div>
+        <div class="spin-object" style="--order: 12" ></div>
+    </div>
+
+<!--COLUMN-->
+    <div class="section column">
+        <div class="coulumn__earth-and-wind">
+            <div class="column-earth row">
+                <div class="earth head"><!--head-->
+                    <div class="tag earth-tag"></div>
+                    <div class="head-title earth-head-title">土象</div>
+                    <div class="head-text earth-head-text">謹慎、穩重、現實</div>
+                </div>
+                <div class="earth unit"> <!--1-->
+                    <div class="tag earth-tag"></div>
+                    <div class="unit-title">魔羯</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">1月</div>
+                </div>
+                <div class="earth unit"><!--5-->
+                    <div class="tag earth-tag"></div>
+                    <div class="unit-title">金牛</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">5月</div>
+                </div>
+                <div class="earth unit"><!--9-->
+                    <div class="tag earth-tag"></div>
+                    <div class="unit-title">處女</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">9月</div>
+                </div>
+            </div>
+            <div class="column-wind row">
+                <div class="wind head"><!--head-->
+                    <div class="tag wind-tag"></div>
+                    <div class="head-title wind-head-title">風象</div>
+                    <div class="head-text wind-head-text">謹慎、穩重、現實</div>
+                </div>
+                <div class="wind unit"> <!--2-->
+                    <div class="tag wind-tag"></div>
+                    <div class="unit-title">水瓶</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">2月</div>
+                </div>
+                <div class="wind unit"><!--6-->
+                    <div class="tag wind-tag"></div>
+                    <div class="unit-title">雙子</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">6月</div>
+                </div>
+                <div class="wind unit"><!--10-->
+                    <div class="tag wind-tag"></div>
+                    <div class="unit-title">天秤</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">10月</div>
+                </div>
+            </div>
+        </div>
+        <div class="coulumn__water-and-fire">
+            <div class="column-water row">
+                <div class="water head"><!--head-->
+                    <div class="tag water-tag"></div>
+                    <div class="head-title water-head-title">水象</div>
+                    <div class="head-text water-head-text">體貼、情緒化、感性</div>
+                </div>
+                <div class="water unit"> <!--3-->
+                    <div class="tag water-tag"></div>
+                    <div class="unit-title">雙魚</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">3月</div>
+                </div>
+                <div class="water unit"><!--7-->
+                    <div class="tag water-tag"></div>
+                    <div class="unit-title">巨蟹</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">7月</div>
+                </div>
+                <div class="water unit"><!--11-->
+                    <div class="tag water-tag"></div>
+                    <div class="unit-title">天蠍</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">11月</div>
+                </div>
+            </div>
+            <div class="column-fire row">
+                <div class="fire head"><!--head-->
+                    <div class="tag fire-tag"></div>
+                    <div class="head-title fire-head-title">火象</div>
+                    <div class="head-text fire-head-text"> 熱情、大方、很樂觀 </div>
+                </div>
+                <div class="fire unit"> <!--4-->
+                    <div class="tag fire-tag"></div>
+                    <div class="unit-title">牡羊</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">4月</div>
+                </div>
+                <div class="fire unit"><!--8-->
+                    <div class="tag fire-tag"></div>
+                    <div class="unit-title">獅子</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">8月</div>
+                </div>
+                <div class="fire unit"><!--12-->
+                    <div class="tag fire-tag"></div>
+                    <div class="unit-title">射手</div>
+                    <div class="unit-divider">|</div>
+                    <div class="unit-month">12月</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--TIMELINE & CAROUSEL-->
+    <div class="section time-line-and-carousel">
+<!--TIMELINE-->
+        <div class="timeline__container" id="timeline__container">
+            <div class="time-line" id="timeline">
+                <div class="time-unit earth-unit current-unit"> <!--魔羯-->
+                    <div class="upper">魔羯</div>
+                    <div class="lower">12/21 - 01/20</div>
+                </div>
+                
+                <div class="time-unit"> <!--水瓶-->
+                    <div class="upper">水瓶</div>
+                    <div class="lower">01/21 - 02/19</div>
+                    </div>
+                
+                <div class="time-unit"> <!--雙魚-->
+                    <div class="upper">雙魚</div>
+                    <div class="lower">02/20 - 03/20</div>
+                </div>
+                
+                <div class="time-unit"> <!--牡羊-->
+                    <div class="upper">牡羊</div>
+                    <div class="lower">03/21 - 04/19</div>
+                </div>
+                
+                <div class="time-unit"> <!--金牛-->
+                    <div class="upper">金牛</div>
+                    <div class="lower">04/20 - 05/20</div>
+                </div>
+                
+                <div class="time-unit"> <!--雙子-->
+                    <div class="upper">雙子</div>
+                    <div class="lower">05/21 - 06/21</div>
+                </div>
+                
+                <div class="time-unit"> <!--巨蟹-->
+                    <div class="upper">巨蟹</div>
+                    <div class="lower">06/22 - 07/22</div>
+                </div>
+                
+                <div class="time-unit"> <!--獅子-->
+                    <div class="upper">獅子</div>
+                    <div class="lower">07/23 - 08/22</div>
+                </div>
+                
+                <div class="time-unit"> <!--處女-->
+                    <div class="upper">處女</div>
+                    <div class="lower">08/23 - 09/22</div>
+                </div>
+                
+                <div class="time-unit"> <!--天秤-->
+                    <div class="upper">天秤</div>
+                    <div class="lower">09/23 - 10/23</div>
+                </div>
+                
+                <div class="time-unit"> <!--天蠍-->
+                    <div class="upper">天蠍</div>
+                    <div class="lower">10/24 - 11/21</div>
+                </div>
+                
+                <div class="time-unit"> <!--射手-->
+                    <div class="upper-end">射手</div>
+                    <div class="lower-end">11/22 - 12/20</div>
+                </div>
+                
+            </div>
+        </div>
+
+<!--CAROUSEL-->
+        <div class="carousel">
+            <!--LEFT BTN-->
+            <button class="carousel-button btn-left"><</button>
+
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <!--CURRENT SLIDE-->
+                    <li class="carousel-slide current-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="/image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="girl-card">
+                            <div class="profile-image">
+                                <img class="carousel-image" src="image/Rectangle.png" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="zodiac-name">雙魚座</div>
+                                <div class="birthday"><span class="birthday-title">生日：</span>02/20 - 03/20</div>
+                                <div class="stereotype">會看詩集拍底片的文青妹</div>
+                                <div class="divider"></div>
+                                <div class="adj">
+                                    <div class="adj-child">想像力</div>
+                                    <div class="adj-child">浪漫</div>
+                                    <div class="adj-child">情緒化</div>
+                                    <div class="adj-child">感性</div>
+                                    <div class="adj-child">體貼</div>
+                                </div>
+                            </div>
+                            <div class="tag-btm-r"></div>
+                        </div>                    
+                    </li>
+
+
+                </ul>
+            </div>
+            <button class="carousel-button btn-right">></button>
+            <div class="carousel-nav">
+                <div class="carousel-indicator current-slide"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+                <div class="carousel-indicator"></div>
+            </div>
+        </div>
+        
+    </div>  
+
+<!--RANDOM WORD-->
+    <div class="section random-container">
+        <div class="random-header">
+            <div class="random-header-title">任何星座都會共鳴的一句話</div>
+            <button class="random-btn">產生</button>
+        </div>
+        <div class="random-quote-container">
+            <span class="big-comma">"</span>
+            <span class="random-quote" id="random-text">
+            妳內心其實並不像表面上看上去那麼樂觀，心裡也藏了很多讓妳憂愁的事情。
+            </span> 
+            <span class="big-comma">"</span>
+        </div>
+        <div class="random-btn-container">
+            <button class="copy-btn" id="random-btn">複製</button>
+        </div>
+    </div>
+
+<!--FEEDBACK-->
+    <div class="section feedback-container">
+        <div class="feedback-header-container">
+           <span class="feedback-header">覺得我們不夠準嗎？</span> <span class="feedback-header">讓我們變得更準</span> <span class="feedback-header arrow">--></span>
+            <button class="feedback-btn">回饋表單</button>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html> 
