@@ -46,22 +46,43 @@ const observerEnter = new IntersectionObserver(
             if(!entry.isIntersecting){
                     return;
             }
-            //IF SCROLLDOWN CURRENT NAV NUMBER++ | VICE VERSA
+            //IF SCROLLDOWN CURRENT NAV NUMBER++ | VICE VERSA            
+            /*
             if(isSrollingUp == false && entry.isIntersecting){
                 currentNavNumber++;
             }else{
                 currentNavNumber--;
-            }
-
-            console.log(isSrollingUp);
-            console.log(entry.target);
-            console.log(currentNavNumber);
-            console.log(nav);
-
+            }*/
             //CHANGE NAV COLOR
+            const colorForNav = Array = ["rgba(255, 208, 118, 0.5)", "rgba(92, 255, 206, 0.5)", "rgba(96, 131, 255, 0.5)", "rgba(255, 126, 126, 0.5)"];
+            nav.forEach(unit => {unit.style.background = "none"});
+            const idArray = ["hero", "column", "timeline", "randomWord", "feedback"];
+            for(i = 0; i < idArray.length; i++){
+                if(entry.target.id == idArray[i]){
+                    nav[i].style.background = colorForNav[i%4];
+                }
+            }
+            
+            /*
+            if(entry.target.id == idArray[0]){
+                nav[0].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[1]){
+                nav[1].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[2]){
+                nav[2].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[3]){
+                nav[3].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[4]){
+                nav[4].style.background = "rgba(255, 208, 118, 0.5)";
+            }*/
+            /*
             nav.forEach(unit => {unit.style.background = "none"});
             nav[currentNavNumber].style.background = "rgba(255, 208, 118, 0.5)";
-            
+            */
+            console.log(isSrollingUp);
+            console.log(entry.target.id);
+            console.log(currentNavNumber);
+            console.log(nav);
             //entry.target.classList.toggle("scrolled")
             //entry.target.classList.toggle("scrolled");
             //observer.unobserve(entry.target); //optional
