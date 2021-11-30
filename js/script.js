@@ -46,22 +46,43 @@ const observerEnter = new IntersectionObserver(
             if(!entry.isIntersecting){
                     return;
             }
-            //IF SCROLLDOWN CURRENT NAV NUMBER++ | VICE VERSA
+            //IF SCROLLDOWN CURRENT NAV NUMBER++ | VICE VERSA            
+            /*
             if(isSrollingUp == false && entry.isIntersecting){
                 currentNavNumber++;
             }else{
                 currentNavNumber--;
-            }
-
-            console.log(isSrollingUp);
-            console.log(entry.target);
-            console.log(currentNavNumber);
-            console.log(nav);
-
+            }*/
             //CHANGE NAV COLOR
+            const colorForNav = Array = ["rgba(255, 208, 118, 0.5)", "rgba(92, 255, 206, 0.5)", "rgba(96, 131, 255, 0.5)", "rgba(255, 126, 126, 0.5)"];
+            nav.forEach(unit => {unit.style.background = "none"});
+            const idArray = ["column", "timeline", "randomWord", "feedback"];
+            for(i = 0; i < idArray.length; i++){
+                if(entry.target.id == idArray[i]){
+                    nav[i+1].style.background = colorForNav[i%4];
+                }
+            }
+            
+            /*
+            if(entry.target.id == idArray[0]){
+                nav[0].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[1]){
+                nav[1].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[2]){
+                nav[2].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[3]){
+                nav[3].style.background = "rgba(255, 208, 118, 0.5)";
+            }else if(entry.target.id == idArray[4]){
+                nav[4].style.background = "rgba(255, 208, 118, 0.5)";
+            }*/
+            /*
             nav.forEach(unit => {unit.style.background = "none"});
             nav[currentNavNumber].style.background = "rgba(255, 208, 118, 0.5)";
-            
+            */
+            console.log(isSrollingUp);
+            console.log(entry.target.id);
+            console.log(currentNavNumber);
+            console.log(nav);
             //entry.target.classList.toggle("scrolled")
             //entry.target.classList.toggle("scrolled");
             //observer.unobserve(entry.target); //optional
@@ -197,14 +218,14 @@ let currentIndex = 0;
 let currentScrollPosition = 0;
 let scrollAmount = 100;
 const timelineContainer = document.getElementById("timeline__container");
-const timeline = document.getElementById("timeline");
+const timeline = document.getElementById("timeline-bar");
 //how many unit can vw contain?
 let vwContainUnit = Math.floor((timelineContainer.offsetWidth)/scrollAmount);
 let a;
 let maxScroll = -timelineContainer.offsetWidth + timeline.offsetWidth;
 
 function scrollTimeline(){
-    a = currentIndex/vwContainUnit
+    a = currentIndex/vwContainUnit;
     if(currentIndex < vwContainUnit){
         currentScrollPosition = 0;
     }
@@ -216,7 +237,7 @@ function scrollTimeline(){
             currentScrollPosition = (Math.floor(a))*(vwContainUnit*scrollAmount) + 1;
         }
         
-    }
+    }   
     timeline.style.right = currentScrollPosition + "px";
     console.log(vwContainUnit);
     console.log(currentIndex);
